@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #E3F2FD;
+  }
+  .container {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    background: #293447;
+    box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
+  }
+ 
+  .game-details {
+    color: #B8C6DC;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+    background: #293447;
+  }
+
+  .board {
+    height: 90vmin;
+    width: 91vmin;
+    display: grid;
+    background: #212837;
+    grid-template: repeat(40, 1fr) / repeat(40, 1fr);
+  }
+
+  .food {
+    background: yellow;
+    border: .25vmin solid white;
+    border-radius: 8px;
+  }
+  .head {
+    background: #60CBFF;
+    border: 2px solid white ;
+    transform: scale(1.02);
+    border-radius: 12px;
+  }
+  .snake {
+    background: plum;
+    border: .25vmin solid white;
+    border-radius: 12px;
+  }
+
+  img{
+    height: 31px;
+    cursor: pointer;
+  }
+  input{
+    display: none;
+    margin-right: 0px;
+  }
